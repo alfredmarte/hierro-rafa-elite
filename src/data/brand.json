@@ -82,9 +82,9 @@
 
   "assets": {
     "images": {
-      "heroSteelProducts":     { "file": "public/images/hero.png",    "description": "Isometric view of steel structural profiles — galvanized gray and orange-painted, no text" },
+      "heroSteelProducts":     { "file": "public/images/hero.webp",    "description": "Isometric view of steel structural profiles — galvanized gray and orange-painted, no text" },
       "heroWithLocations":     { "file": null,                        "description": "Same steel photo with 'Santiago / Puerto Plata / San Francisco de Macorís' white text overlay" },
-      "texture":               { "file": "public/images/texture.png", "description": "Background texture" }
+      "texture":               { "file": "public/images/texture.webp", "description": "Background texture" }
     },
     "logoLockups": {
       "horizontal":            { "file": null, "description": "Wide logo on white — primary web/print header lockup" },

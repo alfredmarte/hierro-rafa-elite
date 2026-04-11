@@ -121,7 +121,7 @@ const BranchRouterModal = ({ isOpen, onClose, onBranchSelect }) => {
           <a href={MAILTO_LINK} className="w-full text-left flex items-center justify-between p-4 sm:p-5 rounded-2xl transition-all group outline-none focus-visible:ring-2 focus-visible:ring-orange bg-dark border border-black/10 hover:shadow-2xl hover:-translate-y-0.5 duration-300 relative overflow-hidden">
              
              {/* Textura súper sutil iluminada */}
-             <div className="absolute inset-0 opacity-10 mix-blend-overlay" style={{backgroundImage: "url('/images/texture.png')"}} />
+             <div className="absolute inset-0 opacity-10 mix-blend-overlay" style={{backgroundImage: "url('/images/texture.webp')"}} />
             
             <div className="flex items-center gap-4 relative z-10">
               <div className="w-12 h-12 rounded-full flex items-center justify-center transition-colors shadow-lg flex-shrink-0 bg-orange text-white group-hover:scale-110 duration-300">
@@ -248,7 +248,7 @@ const Hero = ({ onOpenRouter }) => {
     <section className="relative w-full h-[100dvh] min-h-[600px] flex flex-col justify-center md:justify-end pb-0 pt-16 md:pt-0 md:pb-[15vh] px-6 md:px-16 overflow-hidden bg-dark">
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero.png"
+          src="/images/hero.webp"
           alt="Perfiles de acero"
           className="w-full h-full object-cover opacity-60 mix-blend-luminosity"
         />
@@ -409,7 +409,7 @@ const Philosophy = () => {
   return (
     <section className="relative py-32 md:py-40 px-6 md:px-16 flex justify-center items-center overflow-hidden" style={{ backgroundColor: '#18181A' }}>
       <div className="absolute inset-0 opacity-5">
-        <img src="/images/texture.png" alt="Textura" className="w-full h-full object-cover" />
+        <img src="/images/texture.webp" alt="Textura" className="w-full h-full object-cover" />
       </div>
       <div className="relative z-10 max-w-5xl w-full mx-auto text-center flex flex-col items-center">
         {/* Kicker Editorial */}
@@ -693,7 +693,7 @@ const GlobalTexture = () => (
         top: -50vh;
       }
     `}} />
-    <div className="fixed pointer-events-none z-[999] opacity-[0.03] mix-blend-multiply anim-noise" style={{backgroundImage: "url('/images/texture.png')"}} />
+    <div className="fixed pointer-events-none z-[999] opacity-[0.03] mix-blend-multiply anim-noise" style={{backgroundImage: "url('/images/texture.webp')"}} />
   </>
 );
 

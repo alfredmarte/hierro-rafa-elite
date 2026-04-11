@@ -19,7 +19,7 @@ export function BranchRouter() {
              {/* Textura brutalista incrustrada sobre el container negro */}
              <div 
                className="absolute inset-0 opacity-[0.02] mix-blend-overlay z-0 pointer-events-none"
-               style={{ backgroundImage: "url('/images/texture.png')" }}
+               style={{ backgroundImage: "url('/images/texture.webp')" }}
              />
              <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-30 transition-opacity z-0">
                 <Building2 className="w-32 h-32 text-orange" />

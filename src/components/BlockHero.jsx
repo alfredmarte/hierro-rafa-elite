@@ -7,14 +7,14 @@ export function BlockHero() {
       {/* Fondo Fotográfico Oscurecido */}
       <div 
         className="absolute inset-0 w-full h-full z-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/images/hero.png')" }}
+        style={{ backgroundImage: "url('/images/hero.webp')" }}
       />
       <div className="absolute inset-0 bg-[#111] opacity-75 z-0 mix-blend-multiply" />
       
       {/* Light Noise for richness */}
       <div 
         className="absolute inset-0 opacity-[0.03] z-10 mix-blend-overlay pointer-events-none"
-        style={{ backgroundImage: "url('/images/texture.png')" }}
+        style={{ backgroundImage: "url('/images/texture.webp')" }}
       />
 
       <div className="relative z-20 w-full max-w-7xl mx-auto pt-32 pb-24">
