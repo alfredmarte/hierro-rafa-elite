@@ -3,7 +3,7 @@ import { MapPin } from 'lucide-react';
 export function Navbar() {
   return (
     <div className="absolute top-6 left-0 w-full px-6 z-50">
-      <nav className="max-w-7xl mx-auto bg-ostra rounded-full px-8 py-4 flex flex-row items-center justify-between shadow-2xl">
+      <nav className="max-w-7xl mx-auto bg-white rounded-full px-8 py-4 flex flex-row items-center justify-between shadow-2xl">
         <div className="flex items-center gap-3">
           {/* Logo (asumimos que existe el SVG o PNG) */}
           <img src="/images/hierro_rafa_logo_text.png" alt="Hierro Rafa" className="h-6 object-contain" />
