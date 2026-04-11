@@ -1,0 +1,28 @@
+# Hierro Rafa - Business Knowledge Base
+
+## Brand Overview
+- **Name:** Hierro Rafa
+- **Industry:** Structural Steel & Heavy Logistics Hub (B2B)
+- **Location:** El Cibao, Dominican Republic (Headquarters in Santiago, branches in Puerto Plata, San Francisco de Macorís).
+- **Core UVP:** Uninterrupted logistics hub for heavy construction with an 18-wheeler fleet guaranteeing zero project downtime.
+
+## Target Audience
+- Civil Engineers & General Contractors.
+- Regional hardware stores (Ferreterías).
+- Heavy construction development firms.
+
+## Product & Service Catalog
+### 1. Structural Steel (Acero Estructural)
+- H-Beams, I-Beams (Vigas H, I).
+- Steel plates, angles, tubes, and rods.
+- Calibers compliant with ASTM industrial standards.
+
+### 2. Heavy Logistics
+- Direct, on-time delivery to construction sites across El Cibao.
+- Over-dimensional load transport capabilities.
+
+## Contact Information Architecture
+We operate through localized routing logic:
+- HQ (Santiago & Corporate): Handles high-tonnage direct quoting.
+- Branches (Puerto Plata / SFM): Handles agile regional dispatching.
+(Contact via WhatsApp branch selector on the main web portal).
