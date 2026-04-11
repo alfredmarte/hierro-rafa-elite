@@ -72,7 +72,7 @@ Lista los materiales uno por línea:
 👤 Mi nombre / Nombre de la empresa: 
 📞 Mi teléfono de contacto: `);
 
-const MAILTO_LINK = `mailto:ventas@hierrorafa.com?subject=${EMAIL_SUBJECT}&body=${EMAIL_BODY}`;
+const MAILTO_LINK = `mailto:ventas@centrohierrorafa.com?subject=${EMAIL_SUBJECT}&body=${EMAIL_BODY}`;
 
 gsap.registerPlugin(ScrollTrigger);
 
