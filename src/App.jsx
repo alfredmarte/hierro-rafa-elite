@@ -201,7 +201,7 @@ const Navbar = ({ onOpenRouter, onChangeBranch, selectedBranch }) => {
   }, []);
 
   return (
-    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 px-3 py-2 md:px-6 md:py-3 rounded-full flex items-center justify-between w-[95%] md:w-[92%] max-w-5xl bg-white/95 shadow-sm border border-black/5 backdrop-blur-md transition-all duration-500">
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 px-3 py-2 md:px-6 md:py-3 rounded-full flex items-center justify-between w-[95%] md:w-[92%] max-w-5xl bg-white shadow-sm border border-black/5 transition-all duration-500">
       {/* 1. Izquierda (Pilar Flex): Logo */}
       <div className="flex-1 flex justify-start relative z-10 min-w-[120px]">
         <Logo />
