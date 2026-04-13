@@ -388,9 +388,9 @@ const Products = ({ onOpenRouter }) => {
           </div>
           <MagneticButton
             onClick={onOpenRouter}
-            className="flex-shrink-0 bg-orange text-white px-8 py-4 rounded-full font-heading font-bold text-sm"
+            className="group flex-shrink-0 bg-orange hover:bg-[#25D366] transition-colors duration-500 text-white px-8 py-4 rounded-full font-heading font-bold text-sm shadow-md hover:shadow-lg hover:shadow-[#25D366]/20"
           >
-            <MessageCircle size={18} /> Asesoría en WA
+            <MessageCircle size={18} className="group-hover:scale-110 transition-transform duration-300" /> Asesoría en WA
           </MagneticButton>
         </div>
       </div>
