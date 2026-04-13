@@ -712,7 +712,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    const saved = localStorage.getItem('hierro_rafa_branch');
+    const saved = sessionStorage.getItem('hierro_rafa_branch');
     if (saved) {
       try {
         setSelectedBranch(JSON.parse(saved));
@@ -725,12 +725,12 @@ export default function App() {
   const handleBranchSelect = (branch) => {
     if (!branch) {
       setSelectedBranch(null);
-      localStorage.removeItem('hierro_rafa_branch');
+      sessionStorage.removeItem('hierro_rafa_branch');
       return;
     }
 
     setSelectedBranch(branch);
-    localStorage.setItem('hierro_rafa_branch', JSON.stringify(branch));
+    sessionStorage.setItem('hierro_rafa_branch', JSON.stringify(branch));
     setRouterOpen(false);
     window.open(`https://wa.me/${branch.whatsapp}?text=${WA_MSG}`, '_blank', 'noopener,noreferrer');
   };
