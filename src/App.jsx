@@ -267,7 +267,7 @@ const Hero = ({ onOpenRouter }) => {
             </span>
           </h1>
           <p className="font-data text-white/60 text-sm md:text-base max-w-md md:max-w-xl leading-relaxed tracking-wide mb-8 md:mb-10 text-pretty">
-            El Hub Logístico de acero estructural más completo del Cibao, garantizando que tu obra nunca se detenga. Despachos directos desde Santiago, Puerto Plata y San Francisco de Macorís.
+            El Hub Logístico de acero estructural más completo del Cibao. Garantizamos el volumen e inventario necesario para que tu obra nunca se detenga.
           </p>
           <button
             onClick={onOpenRouter}
@@ -481,10 +481,10 @@ const Esencia = () => {
 
           <div className="essence-card bg-[#18181A] rounded-[3rem] p-8 md:p-12 shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex items-center justify-between z-20 relative">
             <div className="max-w-sm">
-              <div className="font-data text-[10px] tracking-widest text-white/30 uppercase mb-3">Crecimiento</div>
-              <h3 className="font-heading font-bold text-3xl text-white mb-3">Tres Sucursales</h3>
+              <div className="font-data text-[10px] tracking-widest text-white/30 uppercase mb-3">Escala</div>
+              <h3 className="font-heading font-bold text-3xl text-white mb-3">Inventario de Alto Tonelaje</h3>
               <p className="font-data text-xs text-white/60 leading-relaxed">
-                Con bases sólidas en Santiago, Puerto Plata y San Francisco de Macorís, creamos un corredor logístico que cubre estratégicamente la zona norte.
+                Mantenemos la mayor reserva operativa de acero del Cibao. Nuestro músculo logístico despacha volúmenes industriales de forma directa, garantizando que tu proyecto jamás se detenga por falta de material.
               </p>
             </div>
             <div className="hidden md:flex opacity-90"><Target size={100} className="text-[#2AABB5]" strokeWidth={1} /></div>

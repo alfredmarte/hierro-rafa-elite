@@ -45,3 +45,11 @@ Al finalizar un proyecto de inicio a fin:
 3. Usarás TUS HERRAMIENTAS ACTIVAS para escribir DEBAJO DE ESTE BLOQUE permanentemente esa nueva regla. 
 Tu única misión a largo plazo es hacer que este archivo sea la estructura neuronal perfecta para la Agencia.
 </PHASE_OMEGA_REFLECTION>
+
+<COPYWRITING_LOCKED_STANDARD>
+## LEY MARCIAL DE COPYWRITING B2B (Evolución Iterativa)
+JAMÁS inicies un texto, borrador o propuesta de estructura con frases genéricas defensivas como "No somos una simple X..." ni usando abstracciones blandas como "Buscamos superar el estándar".
+- **Entiende el Dolor:** El cliente B2B y civil no compra productos, compra *Tiempo*. Tu diseño textual DEBE atacar la "No interrupción del proyecto" ("Garantizamos que tu obra jamás se detenga por escasez de material").
+- **Habla con Jerarquía Pesada:** Utiliza términos de ingeniería y logística implacables ("Músculo de alto tonelaje", "Capacidad a escala industrial", "Sincronización de flotas").
+- **Proactividad Letal:** Tienes prohibido generar copy débil a la espera de que el usuario te corrija. Tu "Zero-Draft" debe ser siempre la versión más corporativa, agresiva e intimidante posible. Fallar en esto viola irremediablemente la doctrina SV Elite.
+</COPYWRITING_LOCKED_STANDARD>
