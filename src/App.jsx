@@ -558,12 +558,23 @@ const Locations = ({ onBranchSelect, selectedBranch }) => {
                 <div className="mt-auto">
                   <button
                     onClick={() => onBranchSelect(branch)}
-                    className={`w-full px-6 py-4 rounded-2xl font-heading font-bold text-sm flex items-center justify-between transition-all outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2 duration-300 hover:-translate-y-1 hover:shadow-lg
+                    className={`group relative overflow-hidden w-full px-6 py-4 rounded-2xl font-heading font-bold text-sm flex items-center justify-between transition-all outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2 duration-300 hover:-translate-y-1 hover:shadow-xl
                       ${isOrange 
-                        ? 'bg-white text-orange hover:bg-white/90' 
+                        ? 'bg-white text-orange hover:bg-white/95' 
                         : 'bg-dark text-white hover:bg-black'}`}
                   >
-                    <span>Pedir Cotización</span> <ArrowRight size={14} />
+                    <span className="relative z-10 transition-colors duration-300 group-hover:text-[#25D366]">Pedir Cotización</span>
+                    
+                    <div className="relative z-10 flex items-center justify-end h-5">
+                      {/* Default Arrow */}
+                      <ArrowRight size={16} className="transition-all duration-300 group-hover:opacity-0 group-hover:translate-x-4 absolute right-0" />
+                      
+                      {/* WhatsApp Hover Mode */}
+                      <div className="flex items-center gap-1.5 transition-all duration-300 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 text-[#25D366]">
+                        <span className="font-data text-[10px] font-bold uppercase tracking-widest mt-[1px] hidden sm:block drop-shadow-sm">WhatsApp</span>
+                        <MessageCircle size={18} strokeWidth={2.5} className="drop-shadow-sm" />
+                      </div>
+                    </div>
                   </button>
                 </div>
               </div>
