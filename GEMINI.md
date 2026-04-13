@@ -22,6 +22,7 @@ Las lecciones ensangrentadas de antiguos despliegues hechas leyes. Si las violas
 - **LEY ANTI-DOM ABYSS:** Durante el Sticky Stacking o *Stacking Cards* con GSAP, JAMÁS uses `pinSpacing: true` porque inyectarás abismos de espacio visual. Utiliza Native CSS Sticky o GSAP con `pinSpacing: false` con padding calculable.
 - **LEY ANTI-OVERLAPPING:** Todo z-index que invada terreno ajeno (ej. `.mt-[-5rem]`) será validado en Desktop (`lg:`) y Móvil (`sm:`). El contenido de las tarjetas JAMÁS pisará tipografías vecinas. Forzar padding contenedor si se sobrepasa.
 - **LEY DE DESCOMPOSICIÓN:** `App.jsx` jamás superará las 250 líneas. Refactorizarás lógicas magnéticas o spotlitghts hacia `src/components/` brutalmente.
+- **LEY ANTI-FRAGILIDAD DE GRID (Data Mapping):** Si diseñas UIs con simetría asíncrona (ej: una tarjeta central flotando más alto que las demás), NUNCA bases los márgenes CSS (`-mt-10`) en el índice del array (`i === 1`). Tienes la obligación de aislar la jerarquía visual de los datos usando propiedades lógicas (`order-N` de flex/grid basado en el id o "isHQ") para garantizar que si el JSON cambia de orden, la pirámide visual permanezca inquebrantable.
 </DEFENSIVE_CODING_PROTOCOL>
 
 <PROJECT_MATRIX>
