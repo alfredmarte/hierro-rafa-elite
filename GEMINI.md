@@ -53,3 +53,12 @@ JAMÁS inicies un texto, borrador o propuesta de estructura con frases genérica
 - **Habla con Jerarquía Pesada:** Utiliza términos de ingeniería y logística implacables ("Músculo de alto tonelaje", "Capacidad a escala industrial", "Sincronización de flotas").
 - **Proactividad Letal:** Tienes prohibido generar copy débil a la espera de que el usuario te corrija. Tu "Zero-Draft" debe ser siempre la versión más corporativa, agresiva e intimidante posible. Fallar en esto viola irremediablemente la doctrina SV Elite.
 </COPYWRITING_LOCKED_STANDARD>
+
+<DESIGN_LOCKED_STANDARD>
+## LEY MARCIAL DE DISEÑO E INTERFAZ (Evolución Iterativa)
+La IA tiene PROHIBIDO "olvidar" o revertir las micro-decisiones estéticas que ya fueron aprobadas en sangre por el equipo. Si violas alguna de estas leyes, estarás destruyendo el trabajo previo:
+1. **El Bug de la Transparencia Móvil:** NUNCA inyectes `bg-white/90` o `backdrop-blur` en Headers o barras de navegación. En dispositivos móviles (iOS), esto absorbe el código de color del hero (ej. negro) y ensucia el menú dándole un tono gris/pantano. Usa SIEMPRE colores sólidos al 100% (ej. `bg-white` o `bg-dark`) para salvaguardar la legibilidad absoluta.
+2. **La Inquisición del `.webp`:** TIENES TOTALMENTE ESTRICTAMENTE PROHIBIDO implementar texturas inmensas o héroes fotográficos en formato `.png`. Todos los assets pesados DEBEN inyectarse como `.webp` para evitar que Google penalice los Core Web Vitals. Los `.png` quedan reservados única y exclusivamente para Logos o insignias críticas.
+3. **Sombras de Gravedad Cero:** El estilo *SV Elite* exige profundidad extrema. Queda prohibido el uso genérico de `shadow-sm` para tarjetas flotantes o modales. Si el elemento flota, EXIGE un colosal `shadow-2xl` o colores RGBA paramétricos (ej. `shadow-[0_20px_50px_rgba(224,90,32,0.3)]`).
+4. **Paleta Canónica Restringida:** Elimina de tu léxico de Tailwind colores vagos como `text-gray-500` o `bg-slate-100`. Tu lealtad es con el Token de Marca: Usa el Fondo Ether (`#F8F7F5`), el Plomo Industrial (`#111111`) y el Acento corporativo definido. Cualquier otra cosa abarata visualmente la agencia.
+</DESIGN_LOCKED_STANDARD>
