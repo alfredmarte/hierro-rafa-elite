@@ -281,8 +281,27 @@ const Hero = ({ onOpenRouter }) => {
 // ─────────────────────────────────────────────────────────────────────
 // Products Section
 // ─────────────────────────────────────────────────────────────────────
+const HBeamIcon = ({ className, size = 24 }) => (
+  <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    width={size} 
+    height={size} 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+    className={className}
+  >
+    <path d="M5 3v18" />
+    <path d="M19 3v18" />
+    <path d="M5 12h14" />
+  </svg>
+);
+
 const PRODUCTS = [
-  { name: 'Vigas', desc: 'Vigas H, vigas I, canales C', Icon: Columns3 },
+  { name: 'Vigas', desc: 'Vigas H, vigas I, canales C', Icon: HBeamIcon },
   { name: 'Techado', desc: 'Aluzinc, tejas, policarbonato, drenajes', Icon: Warehouse },
   { name: 'Soldadura', desc: 'Máquinas de soldar, electrodos, alambre MIG', Icon: Flame },
   { name: 'Láminas planas', desc: 'Tolas negras, galvanizadas, corrugadas', Icon: FlatSheetIcon },
