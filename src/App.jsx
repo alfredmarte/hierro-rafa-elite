@@ -448,7 +448,7 @@ const Esencia = () => {
   }, []);
 
   return (
-    <section id="nosotros" className="py-24 px-6 md:px-16 bg-transparent flex justify-center overflow-visible">
+    <section id="nosotros" className="pt-24 pb-12 px-6 md:px-16 bg-transparent flex justify-center overflow-visible">
       <div className="max-w-4xl w-full" ref={essenceRef}>
         <div className="mb-16 relative z-0">
           <h2 className="font-heading font-black tracking-tight text-4xl md:text-5xl text-dark">
@@ -458,9 +458,9 @@ const Esencia = () => {
 
         {/* 
           Restaurado el GSAP Timeline original (Stacking Cards Nivel Élite).
-          El padding inferior (pb) funciona como el "tiempo" que necesita el scroll para completar la animación.
+          El padding inferior se reduce brutalmente (Ritmo SV Elite) para evitar el Falso Fondo.
         */}
-        <div className="flex flex-col gap-10 md:gap-14 relative pb-[5vh] md:pb-[10vh]">
+        <div className="flex flex-col gap-10 md:gap-14 relative pb-6 md:pb-12">
           
           <div className="essence-card bg-white rounded-[3rem] p-8 md:p-12 shadow-[0_5px_30px_rgba(0,0,0,0.06)] border border-black/5 flex items-center justify-between z-10 relative">
             <div className="max-w-sm">
@@ -510,7 +510,7 @@ const Esencia = () => {
 
 const Locations = ({ onBranchSelect, selectedBranch }) => {
   return (
-    <section id="ubicaciones" className="pt-24 pb-32 px-6 md:px-16 bg-transparent flex justify-center">
+    <section id="ubicaciones" className="pt-8 md:pt-12 pb-32 px-6 md:px-16 bg-transparent flex justify-center">
       <div className="max-w-5xl w-full">
         {/* Aumentamos el margen inferior en desktop para que la tarjeta no pise el texto */}
         <div className="mb-16 md:mb-14 max-w-sm relative z-20">
