@@ -98,11 +98,7 @@ const Logo = ({ inverted = false, className = '' }) => (
 // ─────────────────────────────────────────────────────────────────────
 const BranchRouterModal = ({ isOpen, onClose, onBranchSelect }) => {
   if (!isOpen) return null;
-  const ROUTE_BRANCHES = [
-    { city: 'Santiago', subtitle: 'Cibao Central, Línea Noroeste', whatsapp: '18294513269', isMain: true },
-    { city: 'Puerto Plata', subtitle: 'Costa Norte', whatsapp: '18294513260' },
-    { city: 'San Fco. de Macorís', subtitle: 'Nordeste, Cibao Sur, Samaná', whatsapp: '18092441313' }
-  ];
+  // Eliminado arreglo local. Los datos ahora provienen del JSON maestro (brandData.locations)
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-200" onClick={onClose}>
       <div className="bg-white rounded-[2rem] w-full max-w-lg shadow-2xl relative overflow-hidden animate-in slide-in-from-bottom-4 duration-300" onClick={e => e.stopPropagation()}>
@@ -148,9 +144,9 @@ const BranchRouterModal = ({ isOpen, onClose, onBranchSelect }) => {
              <span className="font-data text-[10px] text-grayDark uppercase tracking-widest font-bold">O inicia tu cotización vía WhatsApp</span>
              <div className="h-[1px] bg-orange/20 flex-1"></div>
           </div>
-          {ROUTE_BRANCHES.map(b => (
+          {brandData.locations.map(b => (
             <button 
-              key={b.city} 
+              key={b.name} 
               onClick={() => onBranchSelect(b)} 
               className="w-full text-left flex items-center justify-between p-4 rounded-xl transition-all group outline-none focus-visible:ring-2 focus-visible:ring-orange bg-white border-2 border-transparent hover:bg-white hover:border-orange/30 hover:shadow-md"
             >
@@ -160,12 +156,12 @@ const BranchRouterModal = ({ isOpen, onClose, onBranchSelect }) => {
                 </div>
                 <div>
                   <div className="flex items-center gap-2 mb-1">
-                    <div className="font-heading font-bold text-lg text-dark leading-none group-hover:text-orange transition-colors">{b.city}</div>
-                    {b.isMain && <span className="px-2 py-0.5 rounded-[4px] bg-orange/10 text-orange border border-orange/20 text-[9px] font-bold tracking-widest uppercase">Matriz</span>}
+                    <div className="font-heading font-bold text-lg text-dark leading-none group-hover:text-orange transition-colors">{b.name}</div>
+                    {b.isHQ && <span className="px-2 py-0.5 rounded-[4px] bg-orange/10 text-orange border border-orange/20 text-[9px] font-bold tracking-widest uppercase">Matriz</span>}
                   </div>
                   {/* Copywriter: Logística Explícita */}
                   <div className="font-data text-[11px] text-grayDark mt-0.5">
-                    <span className="font-bold text-dark">Despachos:</span> {b.subtitle}
+                    <span className="font-bold text-dark">Despachos:</span> {b.coverage}
                   </div>
                 </div>
               </div>
@@ -223,7 +219,7 @@ const Navbar = ({ onOpenRouter, onChangeBranch, selectedBranch }) => {
           <MapPin size={16} className="text-orange" />
           <div className="flex flex-col items-start leading-tight text-left mt-[1px]">
              <span className="text-[8.5px] md:text-[9.5px] text-black/70 font-black leading-none mb-[2px]">{selectedBranch ? 'Sucursal' : 'Zona de envío'}</span>
-             <span className="font-black">{selectedBranch ? selectedBranch.city : 'Elegir'}</span>
+             <span className="font-black">{selectedBranch ? selectedBranch.name : 'Elegir'}</span>
           </div>
         </button>
 
@@ -510,30 +506,7 @@ const Esencia = () => {
 // ─────────────────────────────────────────────────────────────────────
 // Locations
 // ─────────────────────────────────────────────────────────────────────
-const BRANCHES = [
-  {
-    city: 'Puerto Plata',
-    address: 'Carr. Luperón 1, Marapicada,\nPuerto Plata',
-    phone: '(809) 971-1771',
-    whatsapp: '18294513260',
-    theme: 'light'
-  },
-  {
-    city: 'Santiago',
-    subtitle: 'SEDE PRINCIPAL',
-    address: 'Av. 27 de Febrero 45,\nEnsanche Román, Stgo.',
-    phone: '(809) 575-0202',
-    whatsapp: '18294513269',
-    theme: 'orange'
-  },
-  {
-    city: 'San Francisco\nde Macorís',
-    address: 'Carr. San Fco - Nagua Km 1,\nGuiza, San Francisco de Macorís',
-    phone: '(809) 244-1313',
-    whatsapp: '18092441313',
-    theme: 'light'
-  }
-];
+// Eliminado arreglo local. Los datos ahora provienen del JSON maestro (brandData.locations)
 
 const Locations = ({ onBranchSelect, selectedBranch }) => {
   return (
@@ -551,7 +524,7 @@ const Locations = ({ onBranchSelect, selectedBranch }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 items-start mt-6 md:mt-2">
-          {BRANCHES.map((branch, i) => {
+          {brandData.locations.map((branch, i) => {
             const isOrange = branch.theme === 'orange';
             return (
               <div
@@ -568,7 +541,7 @@ const Locations = ({ onBranchSelect, selectedBranch }) => {
                 )}
                 
                 <h3 className={`font-heading font-black text-2xl whitespace-pre-line mb-8 ${isOrange ? 'text-white' : 'text-dark'}`}>
-                  {branch.city}
+                  {branch.name}
                 </h3>
                 
                 <div className={`flex items-start gap-3 text-xs font-data mb-4 ${isOrange ? 'text-white/80' : 'text-grayDark'}`}>

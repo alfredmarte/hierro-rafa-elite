@@ -17,28 +17,37 @@
       "id": "santiago",
       "name": "Santiago",
       "isHQ": true,
-      "address": "Av. 27 de Febrero 45, Ensanche Román, Santiago",
+      "address": "Av. 27 de Febrero 45,\nEnsanche Román, Stgo.",
       "phone": "(809) 575-0202",
       "whatsapp": "18294513269",
-      "whatsappUrl": "https://wa.me/18294513269"
+      "whatsappUrl": "https://wa.me/18294513269",
+      "subtitle": "SEDE PRINCIPAL",
+      "coverage": "Cibao Central, Línea Noroeste",
+      "theme": "orange"
     },
     {
       "id": "puerto-plata",
       "name": "Puerto Plata",
       "isHQ": false,
-      "address": "Carr. Luperón 1, Marapicada, Puerto Plata",
+      "address": "Carr. Luperón 1, Marapicada,\nPuerto Plata",
       "phone": "(809) 971-1771",
       "whatsapp": "18294513260",
-      "whatsappUrl": "https://wa.me/18294513260"
+      "whatsappUrl": "https://wa.me/18294513260",
+      "subtitle": "Costa Norte",
+      "coverage": "Costa Norte",
+      "theme": "light"
     },
     {
       "id": "san-francisco",
-      "name": "San Francisco de Macorís",
+      "name": "San Francisco\nde Macorís",
       "isHQ": false,
-      "address": "Carr. San Fco – Nagua Km 1, San Francisco de Macorís",
+      "address": "Carr. San Fco - Nagua Km 1,\nGuiza, San Francisco de Macorís",
       "phone": "(809) 244-1313",
       "whatsapp": "18092441313",
-      "whatsappUrl": "https://wa.me/18092441313"
+      "whatsappUrl": "https://wa.me/18092441313",
+      "subtitle": "Nordeste",
+      "coverage": "Nordeste, Cibao Sur, Samaná",
+      "theme": "light"
     }
   ],
 
