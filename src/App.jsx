@@ -526,10 +526,11 @@ const Locations = ({ onBranchSelect, selectedBranch }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 items-start mt-6 md:mt-2">
           {brandData.locations.map((branch, i) => {
             const isOrange = branch.theme === 'orange';
+            const orderClass = isOrange ? 'order-1 md:order-2' : (i === 1 ? 'order-2 md:order-1' : 'order-3');
             return (
               <div
                 key={i}
-                className={`rounded-3xl p-8 flex flex-col transition-transform hover:-translate-y-2 relative
+                className={`rounded-3xl p-8 flex flex-col transition-transform hover:-translate-y-2 relative ${orderClass}
                   ${isOrange 
                     ? 'bg-orange text-white shadow-[0_20px_50px_rgba(224,90,32,0.4)] min-h-[380px] z-20 md:-mt-10' 
                     : 'bg-white text-dark border border-black/10 shadow-[0_15px_40px_rgba(0,0,0,0.06)] min-h-[340px] z-10 md:mt-10'}`}
