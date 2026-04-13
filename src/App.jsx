@@ -357,7 +357,7 @@ const Products = ({ onOpenRouter }) => {
   }, []);
 
   return (
-    <section id="productos" ref={sectionRef} className="pt-16 pb-24 px-6 md:px-16 bg-transparent flex justify-center">
+    <section id="productos" ref={sectionRef} className="pt-16 pb-12 md:pb-16 px-6 md:px-16 bg-transparent flex justify-center">
       <div className="max-w-6xl w-full">
         {/* Header con Tipografía Fluida (SV Elite Feature 4) */}
         <div className="mb-12">
@@ -403,7 +403,7 @@ const Products = ({ onOpenRouter }) => {
 // ─────────────────────────────────────────────────────────────────────
 const Philosophy = () => {
   return (
-    <section className="relative py-32 md:py-40 px-6 md:px-16 flex justify-center items-center overflow-hidden" style={{ backgroundColor: '#18181A' }}>
+    <section className="relative py-20 md:py-24 px-6 md:px-16 flex justify-center items-center overflow-hidden" style={{ backgroundColor: '#18181A' }}>
       <div className="absolute inset-0 opacity-5">
         <img src="/images/texture.webp" alt="Textura" className="w-full h-full object-cover" />
       </div>
@@ -448,7 +448,7 @@ const Esencia = () => {
   }, []);
 
   return (
-    <section id="nosotros" className="pt-24 pb-12 px-6 md:px-16 bg-transparent flex justify-center overflow-visible">
+    <section id="nosotros" className="pt-16 md:pt-20 pb-12 px-6 md:px-16 bg-transparent flex justify-center overflow-visible">
       <div className="max-w-4xl w-full" ref={essenceRef}>
         <div className="mb-16 relative z-0">
           <h2 className="font-heading font-black tracking-tight text-4xl md:text-5xl text-dark">
@@ -510,7 +510,7 @@ const Esencia = () => {
 
 const Locations = ({ onBranchSelect, selectedBranch }) => {
   return (
-    <section id="ubicaciones" className="pt-8 md:pt-12 pb-32 px-6 md:px-16 bg-transparent flex justify-center">
+    <section id="ubicaciones" className="pt-8 md:pt-12 pb-20 md:pb-24 px-6 md:px-16 bg-transparent flex justify-center">
       <div className="max-w-5xl w-full">
         {/* Aumentamos el margen inferior en desktop para que la tarjeta no pise el texto */}
         <div className="mb-16 md:mb-14 max-w-sm relative z-20">
