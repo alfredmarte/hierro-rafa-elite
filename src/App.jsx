@@ -83,11 +83,14 @@ gsap.registerPlugin(ScrollTrigger);
 // Brand Teal: #2AABB5
 // Dark: #111111
 
+import logoInsignia from '../public/images/hierro_rafa_logo_insignia.png';
+import logoText from '../public/images/hierro_rafa_logo_text.png';
+
 // Logo Component
 const Logo = ({ inverted = false, className = '' }) => (
   <div className={`flex items-center gap-2 ${className} relative overflow-hidden group`}>
-    <img src="/images/hierro_rafa_logo_insignia.png" alt="Hierro Rafa Logo" className={`w-8 h-8 md:w-12 md:h-12 object-contain shrink-0 ${inverted ? 'invert hue-rotate-180 brightness-110 contrast-[1.2] mix-blend-screen' : 'contrast-125 mix-blend-multiply'}`} />
-    <img src="/images/hierro_rafa_logo_text.png" alt="Hierro Rafa Logo" className={`h-4 md:h-6 object-contain shrink-0 ${inverted ? 'invert hue-rotate-180 brightness-110 contrast-[1.2] mix-blend-screen' : 'contrast-125 mix-blend-multiply'}`} />
+    <img src={logoInsignia} alt="Hierro Rafa Logo" className={`w-8 h-8 md:w-12 md:h-12 object-contain shrink-0 ${inverted ? 'invert hue-rotate-180 brightness-110 contrast-[1.2] mix-blend-screen' : 'contrast-125 mix-blend-multiply'}`} />
+    <img src={logoText} alt="Hierro Rafa Logo" className={`h-4 md:h-6 object-contain shrink-0 ${inverted ? 'invert hue-rotate-180 brightness-110 contrast-[1.2] mix-blend-screen' : 'contrast-125 mix-blend-multiply'}`} />
   </div>
 );
 
@@ -243,10 +246,9 @@ const Hero = ({ onOpenRouter }) => {
   return (
     <section className="relative w-full h-[100dvh] min-h-[600px] flex flex-col justify-center md:justify-end pb-0 pt-16 md:pt-0 md:pb-[15vh] px-6 md:px-16 overflow-hidden bg-dark">
       <div className="absolute inset-0 z-0">
-        <img
-          src="/images/hero.webp"
-          alt="Perfiles de acero"
-          className="w-full h-full object-cover opacity-60 mix-blend-luminosity"
+        <div
+          className="w-full h-full bg-cover bg-center opacity-60 mix-blend-luminosity"
+          style={{ backgroundImage: `url('/images/hero.webp')` }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-black/30" />
@@ -424,7 +426,7 @@ const Philosophy = () => {
   return (
     <section className="relative py-20 md:py-24 px-6 md:px-16 flex justify-center items-center overflow-hidden" style={{ backgroundColor: '#18181A' }}>
       <div className="absolute inset-0 opacity-5">
-        <img src="/images/texture.webp" alt="Textura" className="w-full h-full object-cover" />
+        <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url('/images/texture.webp')` }} />
       </div>
       <div className="relative z-10 max-w-5xl w-full mx-auto text-center flex flex-col items-center">
         {/* Kicker Editorial */}

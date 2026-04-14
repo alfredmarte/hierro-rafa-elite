@@ -23,6 +23,7 @@ Las lecciones ensangrentadas de antiguos despliegues hechas leyes. Si las violas
 - **LEY ANTI-OVERLAPPING:** Todo z-index que invada terreno ajeno (ej. `.mt-[-5rem]`) será validado en Desktop (`lg:`) y Móvil (`sm:`). El contenido de las tarjetas JAMÁS pisará tipografías vecinas. Forzar padding contenedor si se sobrepasa.
 - **LEY DE DESCOMPOSICIÓN:** `App.jsx` jamás superará las 250 líneas. Refactorizarás lógicas magnéticas o spotlitghts hacia `src/components/` brutalmente.
 - **LEY ANTI-FRAGILIDAD DE GRID (Data Mapping):** Si diseñas UIs con simetría asíncrona (ej: una tarjeta central flotando más alto que las demás), NUNCA bases los márgenes CSS (`-mt-10`) en el índice del array (`i === 1`). Tienes la obligación de aislar la jerarquía visual de los datos usando propiedades lógicas (`order-N` de flex/grid basado en el id o "isHQ") para garantizar que si el JSON cambia de orden, la pirámide visual permanezca inquebrantable.
+- **LEY ANTI-404 (Blindaje de Assets Críticos):** NUNCA inyectes rutas de imágenes / logos estáticos como simples strings en el JSX (ej: `src="/images/logo.png"`). Esto fracasa en producción si cambian los subdominios de Vercel/Netlify o si un Ad-Blocker nativo (Safari) bloquea el nombre de archivo. TIENES LA OBLIGACIÓN de importar los archivos (`import logo from '../public/images/logo.png'`) para forzar a Vite a generar un hash algorítmico, burlando todo bloqueo y asegurando el despliegue al 100%.
 </DEFENSIVE_CODING_PROTOCOL>
 
 <PROJECT_MATRIX>
